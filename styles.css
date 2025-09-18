@@ -1,0 +1,372 @@
+/* styles.css */
+
+body {
+    background: #181818;
+    color: #f0f0f0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #222;
+    padding: 20px 0 10px 0;
+    text-align: center;
+}
+
+.site-title {
+    font-size: 2.5rem;
+    color: gold;
+    margin: 10px 0 0 0;
+    letter-spacing: 2px;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.navbar a {
+    color: gold;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background 0.2s, color 0.2s;
+    position: relative;
+    overflow: hidden;
+}
+
+.navbar a::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background: gold;
+    transition: width 0.3s;
+}
+
+.navbar a:hover::after,
+.navbar a.active::after {
+    width: 100%;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    background: gold;
+    color: #222;
+}
+
+.brand-quote blockquote {
+    font-size: 1.5rem;
+    font-style: italic;
+    text-align: center;
+    margin: 40px auto 10px auto;
+    max-width: 700px;
+    color: #ffd700;
+}
+
+.brand-quote cite {
+    display: block;
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #ccc;
+    text-align: right;
+}
+
+.intro {
+    max-width: 700px;
+    margin: 30px auto;
+    font-size: 1.2rem;
+    text-align: center;
+    color: #f0f0f0;
+}
+
+footer {
+    background: #222;
+    color: #f0f0f0;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+.enquiry-section {
+    max-width: 500px;
+    margin: 40px auto;
+    background: #222;
+    padding: 32px 28px;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.2);
+}
+
+.enquiry-section h1 {
+    text-align: center;
+    color: gold;
+    font-size: 2rem;
+    margin-bottom: 24px;
+    letter-spacing: 1px;
+}
+
+.enquiry-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.enquiry-form label {
+    font-size: 1.1rem;
+    color: #ffd700;
+    margin-bottom: 4px;
+}
+
+.enquiry-form input,
+.enquiry-form textarea {
+    font-size: 1rem;
+    padding: 10px;
+    border: 1px solid #444;
+    border-radius: 6px;
+    background: #181818;
+    color: #f0f0f0;
+    transition: border 0.2s;
+}
+
+.enquiry-form input:focus,
+.enquiry-form textarea:focus {
+    border-color: gold;
+    outline: none;
+}
+
+.enquiry-form button {
+    background: gold;
+    color: #222;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}
+
+.enquiry-form button:hover {
+    background: #222;
+    color: gold;
+    border: 1px solid gold;
+}
+
+.contact-info {
+    max-width: 500px;
+    margin: 40px auto 24px auto;
+    background: #222;
+    padding: 32px 28px;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.2);
+}
+
+.contact-info h1 {
+    color: gold;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 18px;
+    letter-spacing: 1px;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+    font-size: 1.15rem;
+    color: #f0f0f0;
+}
+
+.contact-info li {
+    margin-bottom: 12px;
+}
+
+.contact-info a {
+    color: gold;
+    text-decoration: underline;
+}
+
+.comment-section {
+    max-width: 500px;
+    margin: 0 auto 40px auto;
+    background: #222;
+    padding: 32px 28px;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.2);
+}
+
+.comment-section h2 {
+    color: gold;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 18px;
+    letter-spacing: 1px;
+}
+
+.comment-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.comment-form label {
+    font-size: 1.1rem;
+    color: #ffd700;
+    margin-bottom: 4px;
+}
+
+.comment-form input,
+.comment-form textarea {
+    font-size: 1rem;
+    padding: 10px;
+    border: 1px solid #444;
+    border-radius: 6px;
+    background: #181818;
+    color: #f0f0f0;
+    transition: border 0.2s;
+}
+
+.comment-form input:focus,
+.comment-form textarea:focus {
+    border-color: gold;
+    outline: none;
+}
+
+.comment-form button {
+    background: gold;
+    color: #222;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}
+
+.comment-form button:hover {
+    background: #222;
+    color: gold;
+    border: 1px solid gold;
+}
+
+.about-title {
+    text-align: center;
+    color: gold;
+    font-size: 2.2rem;
+    margin: 30px 0 18px 0;
+    letter-spacing: 1px;
+}
+
+.about-section {
+    max-width: 700px;
+    margin: 0 auto 32px auto;
+    background: #222;
+    padding: 28px 24px;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.15);
+}
+
+.about-section h3 {
+    text-align: center;
+    font-size: 1.4rem;
+    color: #ffd700;
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+}
+
+.about-section p {
+    text-align: center;
+    font-size: 1.15rem;
+    color: #f0f0f0;
+    margin-bottom: 0;
+}
+
+.about-section ul {
+    font-size: 1.1rem;
+    color: #f0f0f0;
+    list-style-position: inside;
+    padding-left: 0;
+    text-align: left;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.about-section ul li {
+    margin-bottom: 10px;
+}
+
+.products-title {
+    text-align: center;
+    color: gold;
+    font-size: 2.2rem;
+    margin: 30px 0 18px 0;
+    letter-spacing: 1px;
+}
+
+.products-intro {
+    max-width: 700px;
+    margin: 0 auto 32px auto;
+    background: #222;
+    padding: 28px 24px;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.15);
+    text-align: center;
+}
+
+.products-intro h2 {
+    color: #ffd700;
+    font-size: 1.5rem;
+    margin-bottom: 14px;
+    letter-spacing: 1px;
+}
+
+.products-intro p {
+    color: #f0f0f0;
+    font-size: 1.15rem;
+}
+
+.products-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: center;
+    margin: 32px auto;
+    max-width: 1200px;
+}
+
+.products-gallery figure {
+    background: #222;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+    padding: 18px 12px;
+    text-align: center;
+    width: 220px;
+    margin: 0;
+}
+
+.products-gallery img {
+    width: 80%;
+    max-width: 160px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+}
+
+.products-gallery figcaption {
+    color: #ffd700;
+    font-size: 1rem;
+    margin-top: 8px;
+    line-height: 1.4;
+}
