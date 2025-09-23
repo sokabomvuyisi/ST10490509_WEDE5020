@@ -1,6 +1,7 @@
 # Part 2 README
 # Overview
-Golden Kings' Oud presents itself as a luxury fragrance brand that blends traditional oud with modern sophistication. It's sleek and bold, featuring a dark theme with striking yellow and white text that reflects the brand’s upscale identity. 
+Golden Kings' Oud is a luxury fragrance brand website designed to blend traditional oud with modern sophistication. The site features a sleek, bold design with a dark theme complemented by striking yellow and white text. It enables visitors to explore the brand's story, browse a curated selection of products, and easily get in touch or make enquiries. Built with HTML and CSS, the website targets fragrance enthusiasts seeking a premium online experience.
+
   
 ## Contents
 - Index.html
