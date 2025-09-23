@@ -1,6 +1,6 @@
 # Part 2 README
 # Overview
-
+Golden Kings' Oud presents itself as a luxury fragrance brand that blends traditional oud with modern sophistication. It's sleek and bold, featuring a dark theme with striking yellow and white text that reflects the brand’s upscale identity. 
   
 ## Contents
 - Index.html
@@ -20,7 +20,7 @@
 -	Mozilla Developer Network (MDN). (2025) CSS: Cascading Style Sheets. Available at: https://developer.mozilla.org/en-US/docs/Web/CSS (Accessed: 19 August 2025).
 -	FreeCodeCamp. (2025) Build a Personal Portfolio Webpage. Available at: https://www.freecodecamp.org/learn/responsive-web-design/build-a-personal-portfolio-webpage/ (Accessed: 19 August 2025).
  
-- Screenshots
+# Screenshots
 
 
 ## Author
