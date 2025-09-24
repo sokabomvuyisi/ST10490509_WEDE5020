@@ -22,6 +22,9 @@ Golden Kings' Oud is a luxury fragrance brand website designed to blend traditio
 -	FreeCodeCamp. (2025) Build a Personal Portfolio Webpage. Available at: https://www.freecodecamp.org/learn/responsive-web-design/build-a-personal-portfolio-webpage/ (Accessed: 19 August 2025).
  
 # Screenshots
+- <img width="391" height="792" alt="image" src="https://github.com/user-attachments/assets/7dfb1643-2d87-4cd7-a19f-f53ef8afceae" />
+- <img width="610" height="808" alt="image" src="https://github.com/user-attachments/assets/08faa824-e89d-433e-8ea7-62279702478c" />
+
 
 
 ## Author
