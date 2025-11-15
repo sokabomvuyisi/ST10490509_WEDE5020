@@ -2,21 +2,18 @@
 <html lang="en">
 
 <head>
-    <!-- Meta tags for character set and responsive design -->
     <meta charset="UTF-8">
+    <title>Golden Kings Oud – Premium Fragrance</title>
+    <meta name="description" content="Contact Golden Kings Oud for enquiries, feedback, or support. Reach us via phone, email, or visit our store.">
+    <meta name="keywords" content="oud, fragrance, perfume, Golden Kings, contact, support, luxury scent">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Golden Kings' Oud</title>
-    <!-- Link to external CSS stylesheet -->
-    <link rel="stylesheet" href="styles.css">
-    <script src="functionality.js"></script>
+    <link rel="stylesheet" href="/Project/CSS/styles.css">
 </head>
 
 <body>
     <header>
-        <!-- Main navigation bar -->
         <nav class="navbar" aria-label="Main navigation">
             <ul>
-                <!-- Navigation links -->
                 <li><a href="index.html">Home</a></li>
                 <li><a href="About.html">About Us</a></li>
                 <li><a href="Products.html">Our Products</a></li>
@@ -28,43 +25,47 @@
 
     <main>
         <section class="contact-info">
-            <!-- Contact information section -->
             <h1>Contact Us</h1>
             <ul>
-                <li>Phone: 01234 567890</li>
-                <li>
-                    Email: <a href="mailto:info@goldenkingsoud.com">info@goldenkingsoud.com</a>
-                </li>
-                <li>Address: 123 Main Street, Anytown, UK</li>
+                <li>📞 Phone: <a href="tel:+441234567890">01234 567890</a></li>
+                <li>📧 Email: <a href="mailto:info@goldenkingsoud.com">info@goldenkingsoud.com</a></li>
+                <li>📍 Address: 123 Albern Sisulu road, Johannesburg, Gauteng</li>
             </ul>
         </section>
 
         <section class="comment-section">
-            <!-- Comment form section -->
             <h2>Leave a Comment</h2>
-            <form class="comment-form" action="#" method="post">
-                <!-- Name input -->
+            <form id="contactForm" class="comment-form" action="/submit-comment.php" method="post" novalidate>
                 <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
+                <input type="text" id="name" name="name" required aria-required="true">
+                <span class="error-msg" aria-live="polite"></span>
 
-                <!-- Email input -->
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+                <input type="email" id="email" name="email" required aria-required="true">
+                <span class="error-msg" aria-live="polite"></span>
 
-                <!-- Comment textarea -->
                 <label for="comment">Comment:</label>
-                <textarea id="comment" name="comment" rows="5" required></textarea>
+                <textarea id="comment" name="comment" rows="5" required aria-required="true"></textarea>
+                <span class="error-msg" aria-live="polite"></span>
 
-                <!-- Submit button -->
                 <button type="submit">Submit</button>
             </form>
+
+            <p class="Location-text">You can find us here:</p>
+            <div id="map" style="height: 300px; margin-top: 20px;"></div>
         </section>
     </main>
 
-    <!-- Footer section -->
     <footer>
         &copy; 2025 Golden Kings' Oud
     </footer>
+
+    <!-- Leaflet.js for interactive map -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+    <!-- Your enhanced JavaScript -->
+    <script src="/Project/JS/functionality.js"></script>
 </body>
 
 </html>

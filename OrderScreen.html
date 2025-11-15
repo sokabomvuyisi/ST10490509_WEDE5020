@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags for character set and responsive design -->
+    <meta charset="UTF-8">
+    <title>Golden Kings Oud – Premium Fragrance</title>
+    <meta name="keywords" content="oud, fragrance, perfume, Golden Kings, luxury scent, buy oud online">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to external CSS stylesheet -->
+    <link rel="stylesheet" href="/Project/CSS/styles.css">
+</head>
+<body>
+    <!--Show your order and calculate the total price-->
+    <header>
+        <!-- Main navigation bar -->
+        <nav class="navbar" aria-label="Main navigation">
+            <ul>
+                <!-- Navigation links -->
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html">About Us</a></li>
+                <li><a href="Products.html">Our Products</a></li>
+                <li><a href="Contact.html">Contact Us</a></li>
+                <li><a href="enquiry.html">Enquiries</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section aria-labelledby="order-heading">
+            <h1 id="order-heading">Your Order</h1>
+            <!-- Order summary / total placeholder -->
+
+        </section>
+
+        <section aria-labelledby="payment-heading">
+            <h2 id="payment-heading">Payment</h2>
+
+            <form id="payment-form" novalidate>
+                <fieldset>
+                    <legend>Choose payment method</legend>
+
+                    <div>
+                        <input type="radio" id="pay-card" name="paymentMethod" value="card" checked>
+                        <label for="pay-card">Pay by Card</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="pay-paypal" name="paymentMethod" value="paypal">
+                        <label for="pay-paypal">Pay with PayPal</label>
+                    </div>
+                </fieldset>
+
+                <!-- Card details (visible when card selected; visibility controlled later with JS/CSS) -->
+                <div id="card-details" class="payment-details">
+                    <label for="card-number">Card number</label>
+                    <input id="card-number" name="cardNumber" type="text" inputmode="numeric" autocomplete="cc-number" placeholder="1234 5678 9012 3456" required>
+
+                    <label for="card-expiry">Expiry (MM/YY)</label>
+                    <input id="card-expiry" name="cardExpiry" type="text" inputmode="numeric" placeholder="MM/YY" required>
+
+                    <label for="card-cvc">CVC</label>
+                    <input id="card-cvc" name="cardCvc" type="text" inputmode="numeric" placeholder="123" required>
+                </div>
+
+                <!-- PayPal placeholder area (visibility controlled later with JS/CSS) -->
+                <div id="paypal-area" class="payment-details" style="display:none;">
+                    <p>You'll be redirected to PayPal to complete the payment.</p>
+                    <button type="button" id="paypal-button">Continue with PayPal</button>
+                </div>
+
+                <div>
+                    <button type="submit" id="place-order">Place order</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2025 Golden Kings' Oud
+    </footer>
+
+    <!-- include functionality script so place-order handler and cart UI run on this page -->
+    <script src="/Project/JS/functionality.js"></script>
+</body>
+</html>

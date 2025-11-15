@@ -2,21 +2,18 @@
 <html lang="en">
 
 <head>
-    <!-- Meta tags for character set and responsive design -->
     <meta charset="UTF-8">
+    <title>Golden Kings Oud – Enquiries</title>
+    <meta name="description" content="Send us your enquiry at Golden Kings Oud. Reach out for product questions, feedback, or support.">
+    <meta name="keywords" content="oud, fragrance, perfume, Golden Kings, enquiry, contact, support, luxury scent">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Golden Kings' Oud</title>
-    <!-- Link to external CSS stylesheet -->
-    <link rel="stylesheet" href="styles.css">
-    <script src="functionality.js"></script>
+    <link rel="stylesheet" href="/Project/CSS/styles.css">
 </head>
 
 <body>
     <header>
-        <!-- Main navigation bar -->
         <nav class="navbar" aria-label="Main navigation">
             <ul>
-                <!-- Navigation links -->
                 <li><a href="index.html">Home</a></li>
                 <li><a href="About.html">About Us</a></li>
                 <li><a href="Products.html">Our Products</a></li>
@@ -28,35 +25,35 @@
 
     <main>
         <section class="enquiry-section">
-            <!-- Enquiry form section -->
             <h1>Send Us Your Enquiry</h1>
-            <form class="enquiry-form" action="#" method="post">
-                <!-- Full Name input -->
+            <form id="contactForm" class="enquiry-form" action="/submit-enquiry.php" method="post" novalidate>
                 <label for="name">Full Name:</label>
-                <input type="text" id="name" name="name" required>
+                <input type="text" id="name" name="name" required aria-required="true">
+                <span class="error-msg" aria-live="polite"></span>
 
-                <!-- Email Address input -->
                 <label for="email">Email Address:</label>
-                <input type="email" id="email" name="email" required>
+                <input type="email" id="email" name="email" required aria-required="true">
+                <span class="error-msg" aria-live="polite"></span>
 
-                <!-- Subject input -->
                 <label for="subject">Subject:</label>
                 <input type="text" id="subject" name="subject">
+                <span class="error-msg" aria-live="polite"></span>
 
-                <!-- Message textarea -->
                 <label for="message">Your Message:</label>
-                <textarea id="message" name="message" rows="6" required></textarea>
+                <textarea id="message" name="message" rows="6" required aria-required="true"></textarea>
+                <span class="error-msg" aria-live="polite"></span>
 
-                <!-- Submit button -->
                 <button type="submit">Submit Enquiry</button>
             </form>
         </section>
     </main>
 
-    <!-- Footer section -->
     <footer>
         &copy; 2025 Golden Kings' Oud
     </footer>
+
+    <!-- Enhanced functionality script -->
+    <script src="/Project/JS/functionality.js"></script>
 </body>
 
 </html>
