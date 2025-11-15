@@ -10,6 +10,7 @@ Golden Kings' Oud is a luxury fragrance brand website designed to blend traditio
 - Contacts.html
 - Enquiry.html
 - style.css
+- functionality.js
 # Reference
  These are the references of the proposal:
 - Behance. (2025) Oud Branding Projects. Available at: https://www.behance.net/search/projects/oud%20branding (Accessed: 19 August 2025).
