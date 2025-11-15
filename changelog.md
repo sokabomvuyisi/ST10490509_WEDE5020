@@ -20,3 +20,11 @@
 - Checked for mistakes and added animation to my background
 # 24-09-2025
 - Took screenshots of my website in different mobile devices and pasted it in my README 
+# 09-10-2025
+-Started with JavaScript where i added different functions to the page
+# 10-11-2025
+- After a short break, i completed my JS code
+# 12-11-2025
+- I began fixing my github, commiting my files.
+# 15-11-2025
+-After a long break i rechecked my work and i was done with the WEDE Assignment
