@@ -1,0 +1,726 @@
+/* styles.css */
+
+/* === Animated background images for body === */
+@keyframes MyAnimation {
+    0% {
+        background-image: url(/Image/Copilot_20250809_163439.png);
+        background-size: cover;
+    }
+    50% {
+        background-image: url(/Image/Copilot_20250809_163429.png);
+        background-size: cover;
+        background-position: center;
+    }
+    75% {
+        background-image: url(/Image/Copilot_20250811_092528.png);
+        background-size: cover;
+        background-position: center;
+    }
+    100% {
+        background-image: url(/Image/Copilot_20250811_092535.png);
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+/* === Base body styles === */
+body {
+    background: #181818;
+    color: #f0f0f0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    animation-name: MyAnimation;
+    animation-duration: 11s;
+    animation-iteration-count: infinite;
+}
+
+/* === Header styles === */
+header {
+    background: #222;
+    padding: 20px 0 10px 0;
+    text-align: center;
+}
+
+.site-title {
+    font-size: 2.5rem;
+    color: gold;
+    margin: 10px 0 0 0;
+    letter-spacing: 2px;
+}
+
+/* === Navigation bar styles === */
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.navbar a {
+    color: gold;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background 0.2s, color 0.2s;
+    position: relative;
+    overflow: hidden;
+}
+
+.navbar a::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background: gold;
+    transition: width 0.3s;
+}
+
+.navbar a:hover::after,
+.navbar a.active::after {
+    width: 100%;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    background: gold;
+    color: #222;
+}
+
+/* === Profile picture styles === */
+.profile-picture {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+    border: 4px solid gold;
+}
+
+/* === Brand quote styles === */
+.brand-quote blockquote {
+    font-size: 1.5rem;
+    font-style: italic;
+    text-align: center;
+    margin: 0 auto 30px auto;
+    max-width: 700px;
+    color: #ffd700;
+    border-radius: 30px;
+    gap: 10px;
+}
+
+.brand-quote cite {
+    display: block;
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #ccc;
+    text-align: center;
+}
+
+/* === Intro section styles === */
+.intro {
+    max-width: 700px;
+    margin: 30px auto;
+    font-size: 1.2rem;
+    text-align: center;
+    color: #f0f0f0;
+}
+
+/* === Footer styles === */
+footer {
+    background: #222;
+    color: #f0f0f0;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+/* === Enquiry section styles === */
+.enquiry-section {
+    max-width: 500px;
+    margin: 40px auto;
+    background: #222;
+    padding: 32px 28px;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.2);
+}
+
+.enquiry-section h1 {
+    text-align: center;
+    color: gold;
+    font-size: 2rem;
+    margin-bottom: 24px;
+    letter-spacing: 1px;
+}
+
+.enquiry-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.enquiry-form label {
+    font-size: 1.1rem;
+    color: #ffd700;
+    margin-bottom: 4px;
+}
+
+.enquiry-form input,
+.enquiry-form textarea {
+    font-size: 1rem;
+    padding: 10px;
+    border: 1px solid #444;
+    border-radius: 6px;
+    background: #181818;
+    color: #f0f0f0;
+    transition: border 0.2s;
+}
+
+.enquiry-form input:focus,
+.enquiry-form textarea:focus {
+    border-color: gold;
+    outline: none;
+}
+
+.enquiry-form button {
+    background: gold;
+    color: #222;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}
+
+.enquiry-form button:hover {
+    background: #222;
+    color: gold;
+    border: 1px solid gold;
+}
+
+/* === Contact info section styles === */
+.contact-info {
+    max-width: 500px;
+    margin: 40px auto 24px auto;
+    background: #222;
+    padding: 32px 28px;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.2);
+}
+
+.contact-info h1 {
+    color: gold;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 18px;
+    letter-spacing: 1px;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+    font-size: 1.15rem;
+    color: #f0f0f0;
+}
+
+.contact-info li {
+    margin-bottom: 12px;
+}
+
+.contact-info a {
+    color: gold;
+    text-decoration: underline;
+}
+
+/* === Comment section styles === */
+.comment-section {
+    max-width: 500px;
+    margin: 0 auto 40px auto;
+    background: #222;
+    padding: 32px 28px;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.2);
+}
+
+.comment-section h2 {
+    color: gold;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 18px;
+    letter-spacing: 1px;
+}
+
+.comment-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.comment-form label {
+    font-size: 1.1rem;
+    color: #ffd700;
+    margin-bottom: 4px;
+}
+
+.comment-form input,
+.comment-form textarea {
+    font-size: 1rem;
+    padding: 10px;
+    border: 1px solid #444;
+    border-radius: 6px;
+    background: #181818;
+    color: #f0f0f0;
+    transition: border 0.2s;
+}
+
+.comment-form input:focus,
+.comment-form textarea:focus {
+    border-color: gold;
+    outline: none;
+}
+
+.comment-form button {
+    background: gold;
+    color: #222;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}
+
+.comment-form button:hover {
+    background: #222;
+    color: gold;
+    border: 1px solid gold;
+}
+
+/* === About section styles === */
+.about-title {
+    text-align: center;
+    color: gold;
+    font-size: 2.2rem;
+    margin: 30px 0 18px 0;
+    letter-spacing: 1px;
+}
+
+.about-section {
+    max-width: 700px;
+    margin: 0 auto 32px auto;
+    background: #222;
+    padding: 28px 24px;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.15);
+}
+
+.about-section h3 {
+    text-align: center;
+    font-size: 1.4rem;
+    color: #ffd700;
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+}
+
+.about-section p {
+    text-align: center;
+    font-size: 1.15rem;
+    color: #f0f0f0;
+    margin-bottom: 0;
+}
+
+.about-section ul {
+    font-size: 1.1rem;
+    color: #f0f0f0;
+    list-style-position: inside;
+    padding-left: 0;
+    text-align: left;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.about-section ul li {
+    margin-bottom: 10px;
+}
+
+/* === Products section styles === */
+.products-title {
+    text-align: center;
+    color: gold;
+    font-size: 2.2rem;
+    margin: 30px 0 18px 0;
+    letter-spacing: 1px;
+}
+
+.products-intro {
+    max-width: 700px;
+    margin: 0 auto 32px auto;
+    background: #222;
+    padding: 28px 24px;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.15);
+    text-align: center;
+}
+
+.products-intro h2 {
+    color: #ffd700;
+    font-size: 1.5rem;
+    margin-bottom: 14px;
+    letter-spacing: 1px;
+}
+
+.products-intro p {
+    color: #f0f0f0;
+    font-size: 1.15rem;
+}
+
+.products-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: center;
+    margin: 32px auto;
+    max-width: 1200px;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+    transform-origin: center;
+}
+
+.products-gallery:hover {
+    background: rgba(255,215,0,0.03); /* subtle gold tint on hover */
+    transition: background 200ms ease;
+}
+
+/* Ensure product figures animate smoothly */
+.products-gallery figure {
+    transition: transform .18s ease, box-shadow .18s ease;
+}
+
+/* Slight gallery-wide lift/zoom when hovering the gallery container */
+.products-gallery:hover figure {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.18);
+}
+
+/* Stronger effect for the individual product under the pointer */
+.products-gallery figure:hover {
+    transform: translateY(-8px) scale(1.06);
+    box-shadow: 0 18px 36px rgba(0,0,0,0.22);
+}
+
+.products-gallery figure {
+    background: #222;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+    padding: 18px 12px;
+    text-align: center;
+    width: 220px;
+    margin: 0;
+}
+
+.products-gallery img {
+    width: 80%;
+    max-width: 160px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+}
+
+.products-gallery figcaption {
+    color: #ffd700;
+    font-size: 1rem;
+    margin-top: 8px;
+    line-height: 1.4;
+}
+
+/* === Group blockquote, cite, and intro in a single grey border === */
+.brand-quote-group {
+    border: 2px solid grey;
+    border-radius: 24px;
+    padding: 28px 24px;
+    background: #222;
+    max-width: 750px;
+    margin: 32px auto;
+}
+
+/* === Order screen styles === */
+.order-screen {
+    max-width: 900px;
+    margin: 36px auto;
+    background: #222;
+    padding: 28px;
+    border-radius: 12px;
+    box-shadow: 0 6px 28px rgba(0,0,0,0.2);
+    color: #f0f0f0;
+}
+
+.order-screen .order-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+.order-screen .order-title {
+    color: gold;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+}
+
+.order-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.order-item {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    background: #181818;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #333;
+}
+
+.order-item img {
+    width: 84px;
+    height: 84px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid gold;
+}
+
+.order-item .details {
+    flex: 1;
+    font-size: 0.98rem;
+    color: #f0f0f0;
+}
+
+.order-item .details .name {
+    color: #ffd700;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.order-item .controls {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.qty {
+    background: #222;
+    color: #f0f0f0;
+    border: 1px solid #444;
+    padding: 6px 10px;
+    border-radius: 6px;
+}
+
+.price {
+    color: #ffd700;
+    font-weight: 700;
+    margin-left: 10px;
+    white-space: nowrap;
+}
+
+.order-actions {
+    display: flex;
+    gap: 12px;
+    justify-content: flex-end;
+    margin-top: 8px;
+}
+
+.order-button {
+    background: gold;
+    color: #222;
+    border: none;
+    padding: 10px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.18s, color 0.18s, border 0.18s;
+}
+
+.order-button.secondary {
+    background: #222;
+    color: gold;
+    border: 1px solid gold;
+}
+
+.order-button:hover {
+    background: #222;
+    color: gold;
+    border: 1px solid gold;
+}
+
+.order-summary {
+    background: #181818;
+    padding: 16px;
+    border-radius: 10px;
+    border: 1px solid #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.order-summary .total-label {
+    color: #ccc;
+    font-size: 1rem;
+}
+
+.order-summary .total-amount {
+    color: #ffd700;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+/* empty state */
+.order-empty {
+    text-align: center;
+    padding: 24px;
+    color: #ccc;
+    background: #181818;
+    border-radius: 8px;
+    border: 1px solid #333;
+}
+
+/* === Responsive styles for tablets and phones === */
+@media (max-width: 900px) {
+    /* Reduce padding and max-width for main sections on tablets */
+    .about-section,
+    .products-intro,
+    .brand-quote-group,
+    .enquiry-section,
+    .contact-info,
+    .comment-section {
+        max-width: 95vw;
+        padding: 18px 8px;
+    }
+    .products-gallery {
+        gap: 18px;
+        padding: 4px 4px;
+    }
+    .products-gallery figure {
+        width: 45vw;
+        min-width: 160px;
+        padding: 12px 6px;
+    }
+}
+
+@media (max-width: 600px) {
+    /* Stack navbar vertically and shrink header elements on phones */
+    header {
+        padding: 12px 0 6px 0;
+    }
+    .site-title {
+        font-size: 1.5rem;
+    }
+    .navbar ul {
+        flex-direction: column;
+        gap: 12px;
+    }
+    .profile-picture {
+        width: 120px;
+        height: 120px;
+        margin: 12px auto;
+    }
+    /* Reduce padding and border radius for main sections on phones */
+    .about-section,
+    .products-intro,
+    .brand-quote-group,
+    .enquiry-section,
+    .contact-info,
+    .comment-section {
+        max-width: 99vw;
+        padding: 10px 2vw;
+        border-radius: 10px;
+    }
+    /* Stack product gallery vertically on phones */
+    .products-gallery {
+        flex-direction: column;
+        gap: 12px;
+        padding: 2px 0;
+    }
+    .products-gallery figure {
+        width: 90vw;
+        min-width: 120px;
+        padding: 8px 2px;
+    }
+    /* Shrink titles and headings on phones */
+    .about-title,
+    .products-title {
+        font-size: 1.3rem;
+        margin: 18px 0 10px 0;
+    }
+    .enquiry-section h1,
+    .contact-info h1 {
+        font-size: 1.3rem;
+        margin-bottom: 12px;
+    }
+    .comment-section h2 {
+        font-size: 1.1rem;
+        margin-bottom: 10px;
+    }
+    /* Shrink quote and intro text on phones */
+    .brand-quote blockquote {
+        font-size: 1.1rem;
+        max-width: 95vw;
+    }
+    .intro {
+        font-size: 1rem;
+        margin: 18px auto;
+        max-width: 95vw;
+    }
+}
+
+@media (max-width: 700px) {
+    .order-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .order-item img {
+        width: 120px;
+        height: 120px;
+    }
+    .order-actions {
+        width: 100%;
+        justify-content: space-between;
+    }
+    .order-screen {
+        padding: 18px;
+        max-width: 95vw;
+    }
+}
+
+/* === Add to cart button styles === */
+.add-to-cart {
+    text-align: center;
+    margin-top: 10px;
+    color: #ffd700;
+    border: groove;
+    padding: 8px 12px;
+    border-radius: 8px;
+    background-color: #ffd700;
+}
+.Location-text{
+    color: #ffd700;
+}
